@@ -1,5 +1,4 @@
-h1, h2{
-    color: aliceblue;
+h1{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
@@ -7,8 +6,5 @@ h1, h2{
 select{
     display: block;
     margin: 0 auto;
-    color: aliceblue;
-}
-body{
-    background-color:lightblue;
+
 }
