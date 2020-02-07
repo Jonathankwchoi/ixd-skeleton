@@ -15,6 +15,7 @@ var chords = require('./routes/chords');
 var search = require('./routes/search');
 var instructor = require('./routes/instructor');
 var calls = require('./routes/calls');
+var add = require('./routes/add');
 
 var app = express();
 
@@ -45,6 +46,8 @@ app.get('/chords', chords.view);
 app.get('/search', search.view);
 app.get('/instructor', instructor.view);
 app.get('/calls', calls.view);
+app.get('/add?song=', add.view);
+app.get('/add', add.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
