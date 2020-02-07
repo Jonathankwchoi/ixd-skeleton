@@ -13,6 +13,7 @@ var index = require('./routes/index');
 // var user = require('./routes/user');
 var chords = require('./routes/chords');
 var search = require('./routes/search');
+var instructor = require('./routes/instructor');
 
 var app = express();
 
@@ -41,6 +42,7 @@ app.get('/', index.view);
 // app.get('/users', user.list);
 app.get('/chords', chords.view);
 app.get('/search', search.view);
+app.get('/instructor', instructor.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
