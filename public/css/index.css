@@ -1,8 +1,9 @@
-/*h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
 	color: #8382BF;
-}*/
+}
+
 body {
-    /*background-color: skyblue;*/
+    background-color: skyblue;
 }
 
 .container {
@@ -17,7 +18,7 @@ h2 {
     display: inline-block;
     width: 250px;
     margin: 1px;
-    /*border-style: solid;
+    border-style: solid;
     border: black;
-    border-width: 5px;*/
+    border-width: 5px;
 }
