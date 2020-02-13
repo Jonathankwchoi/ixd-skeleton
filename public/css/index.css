@@ -22,3 +22,8 @@ h2 {
     border: black;
     border-width: 5px;
 }
+
+#loginHeader {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
