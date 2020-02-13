@@ -11,11 +11,14 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 // Example route
 // var user = require('./routes/user');
+var menu = require('./routes/menu');
 var chords = require('./routes/chords');
 var search = require('./routes/search');
 var instructor = require('./routes/instructor');
 var calls = require('./routes/calls');
 var add = require('./routes/add');
+var login = require('./routes/login');
+
 
 var app = express();
 
@@ -48,6 +51,8 @@ app.get('/instructor', instructor.view);
 app.get('/calls', calls.view);
 app.get('/add?song=', add.view);
 app.get('/add', add.view);
+app.get('/menu', menu.view);
+app.get('/login', login.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

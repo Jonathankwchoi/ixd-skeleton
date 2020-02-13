@@ -1,0 +1,23 @@
+/*h1, h2, h3, h4, h5 {
+	color: #8382BF;
+}*/
+body {
+    /*background-color: skyblue;*/
+}
+
+.container {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.menu {
+    display: inline-block;
+    width: 250px;
+    margin: 1px;
+    /*border-style: solid;
+    border: black;
+    border-width: 5px;*/
+}
