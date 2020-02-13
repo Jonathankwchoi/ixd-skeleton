@@ -17,7 +17,7 @@ var search = require('./routes/search');
 var instructor = require('./routes/instructor');
 var calls = require('./routes/calls');
 var add = require('./routes/add');
-var login = require('./routes/login');
+//var login = require('./routes/login');
 
 
 var app = express();
@@ -52,7 +52,7 @@ app.get('/calls', calls.view);
 app.get('/add?song=', add.view);
 app.get('/add', add.view);
 app.get('/menu', menu.view);
-app.get('/login', login.view);
+//app.get('/login', login.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
