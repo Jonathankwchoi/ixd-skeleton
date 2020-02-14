@@ -11,6 +11,7 @@ body {
 
 h2 {
     text-align: center;
+    color: whitesmoke;
 }
 
 .menu {
@@ -29,4 +30,8 @@ h2 {
 * {
     margin: 0.5vw;
     padding: 0.5vw;
+}
+
+h3{
+    color: whitesmoke; 
 }
