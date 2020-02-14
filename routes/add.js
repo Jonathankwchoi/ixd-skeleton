@@ -1,8 +1,8 @@
-/*
- * GET results page.
- */
+// Get songs from JSON file
+
+var songs = require('../songs.json');
+
 exports.view = function(req, res){
-    var song = req.params.song;
-  
-  res.render("results");
+    console.log(songs);
+	res.render("add", songs);
 };
