@@ -12,3 +12,23 @@ select{
 body{
     background-color:skyblue;
 }
+
+img {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#chordsPicture {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+}
