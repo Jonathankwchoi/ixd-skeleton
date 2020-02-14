@@ -17,6 +17,7 @@ var search = require('./routes/search');
 var instructor = require('./routes/instructor');
 var calls = require('./routes/calls');
 var add = require('./routes/add');
+var blob = require('./routes/blob');
 //var login = require('./routes/login');
 
 
@@ -52,6 +53,7 @@ app.get('/calls', calls.view);
 app.get('/add?song=', add.view);
 app.get('/add', add.view);
 app.get('/menu', menu.view);
+app.get('/blob', blob.view);
 //app.get('/login', login.view);
 
 http.createServer(app).listen(app.get('port'), function(){
