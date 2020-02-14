@@ -14,14 +14,17 @@
     <img src="pictures/home.png" width="100" class="img-responsive" alt="home button">
     </a>
     	<div class="instructor-form">
-            <form id="loginForm" role="form" method="get" action="/menu" target="_self"></form>
-                <h1>New Instructor? </h1>
+            <h1>New Instructor? </h1>
+            <form id="instructorLogin" role="form" method="get" action="/menu" target="_self"></form>
+                
                 <label for="username">Username: </label>
-                <input type="text" class="form-control" id="username" placeholder="Bob" name="username">
+                <input type="text" class="form-control" id="instructorUsername" placeholder="Bob" name="instructorUsername">
                 <label for="password">Password: </label>
-                <input type="text" class="form-control" id="password" placeholder="Bobbert" name="password">
-                <input type="submit" id="submitBtn" class="btn btn-info" value="Submit"></input>
-            </form>
+                <input type="text" class="form-control" id="instructorPassword" placeholder="Bobbert" name="instructorPassword">
+                </form>
+                <input class="btn btn-info" value="Submit" onclick="window.location.href = '/menu'"></input>
+                <!--<input type="submit" id="instructorSubmit" class="btn btn-info" value="Submit"></input>-->
+            <!--</form>-->
             <h2>Already have an account?</h2>
 
             <a href="/" class="btn btn-info" role="button">Login</a>
