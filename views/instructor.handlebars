@@ -4,12 +4,30 @@
     <title>Instructor</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/instructor.css" rel="stylesheet">
 </head>
 <body>
     <a href="/menu" id="homeButton">
     <img src="pictures/home.png" width="100" class="img-responsive" alt="home button">
     </a>
-    <h1>Placeholder Instructor</h1>
+    	<div class="instructor-form">
+
+            <form id="loginForm" role="form" method="get" action="/menu" target="_self"></form>
+                <h1>New Instructor? </h1>
+                <label for="username">Username: </label>
+                <input type="text" class="form-control" id="username" placeholder="Bob" name="username">
+                <label for="password">Password: </label>
+                <input type="text" class="form-control" id="password" placeholder="Bobbert" name="password">
+                <input type="submit" id="submitBtn" class="btn btn-default" value="Submit"></input>
+            </form>
+            <h2>Already have an account?</h2>
+            <input type="submit" id="submitBtn" class="btn btn-default" value="Login"></input>
+		</div>
+
 </body>
+
 
 </html>
