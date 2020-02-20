@@ -4,12 +4,23 @@
 	    <title>Results</title>
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link href="css/index.css" rel="stylesheet">
+	    <link href="css/overall.css" rel="stylesheet">
 	</head>
 	<body>
 	    <a href="/menu" id="homeButton">
 	    <img src="pictures/home.png" width="100" class="img-responsive" alt="home button">
 	    </a>
-	    <h1>Placeholder Results</h1>
+
+	    <h1>Results</h1>
+
+	    <div class="songlist">
+		  {{#each songs}}
+		    <ol>
+			  <h3 class="names">{{name}}</h3>
+			  <p>{{lyrics}}</p>
+		    </ol>
+		    <hr>
+		  {{/each}}
+		</div>
 	</body>
 </html>
