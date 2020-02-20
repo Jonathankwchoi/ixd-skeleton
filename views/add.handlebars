@@ -22,5 +22,23 @@
 		    <hr>
 		  {{/each}}
 		</div>
+
+		<form id="addSongForm" role="form" method="get" action="/addSong">
+			<h3>Can't find a song?</h3>
+			<h4>Add it here!</h4>
+
+			<div class="form-group">	
+			  <!--<label for="name">Name:</label>-->
+			  <input type="text" class="form-control" id="name" placeholder="Song name" name="name">
+			</div>
+
+			<div class="form-group">
+			  <!--<label for="lyrics">Lyrics:</label>
+			  <input type="text" class="form-control" id="lyrics" placeholder="Lyrics" name="lyrics">-->
+			  <textarea type="text" class="form-control" id="lyrics" placeholder="Song lyrics" name="lyrics" rows="4" cols="50"></textarea>
+			</div>
+
+			<input type="submit" id="submitBtn" class="btn btn-default" value="Add the song"></input>
+		</form>
 	</body>
 </html>

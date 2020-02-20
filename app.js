@@ -52,6 +52,7 @@ app.get('/instructor', instructor.view);
 app.get('/calls', calls.view);
 app.get('/add?song=', add.view);
 app.get('/add', add.view);
+app.get('/addSong', add.addSong);
 app.get('/menu', menu.view);
 app.get('/blob', blob.view);
 //app.get('/login', login.view);
