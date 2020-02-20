@@ -7,11 +7,13 @@ body {
 
 .container {
     text-align: center;
+    max-height: 80vh;
 }
 
 h2 {
     text-align: center;
     color: whitesmoke;
+    margin: 0.5vh;
 }
 
 .menu {
@@ -21,17 +23,36 @@ h2 {
     /*border-style: solid;
     border: black;
     border-width: 5px;*/
+    max-height: 20vh;
 }
-
-.logout {
-    text-align: right;
+.menu img{
+    height: 13vh;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    vertical-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 * {
-    margin: 0.5vw;
-    padding: 0.5vw;
+    margin: 0.5vh 0.5vw;
+    padding: 0.5vh 0.5vw;
 }
 
 h3{
     color: whitesmoke; 
 }
+
+hr {
+    margin: 0.5vh;
+}
+
+/* a {
+    max-height: 5vh;
+}
+
+.logout {
+    max-height: 5vh;
+} */
