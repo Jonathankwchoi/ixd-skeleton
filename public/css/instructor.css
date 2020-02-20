@@ -5,16 +5,21 @@ body{
 
 
 }
+.thumbnail{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
 p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 35px;
+    font-size: 20px;
     text-align: center;
-
 }
+
 h4{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 350%;
-    
+    font-size: 60px;
+    text-align: center;
 }
 
 .img{
