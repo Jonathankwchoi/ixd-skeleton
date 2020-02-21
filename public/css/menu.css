@@ -49,10 +49,16 @@ hr {
     margin: 0.5vh;
 }
 
+
+
 /* a {
     max-height: 5vh;
 }
-
+*/
 .logout {
-    max-height: 5vh;
-} */
+    position: absolute;
+} 
+.profile {
+    position: absolute;
+    top: 10vh;
+}

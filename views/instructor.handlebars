@@ -14,10 +14,26 @@
     <img src="pictures/home.png" width="100" class="img-responsive" alt="home button">
     </a>
 
-    <h4>Instructors</h4>
+    <h4>Contacts</h4>
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
+		<div class="instructors">
+		  {{#each instructors}}
+		  <div class="images">
+		    <ol>	
+					<img src={{image}} class="images">
+					<p class="names"> Name: {{name}}</p>
+					<p class="bios"> Biography: {{bio}}</p>
+					<p>Email: <a href="mailto:{{email}}">{{email}}</a></p>
+					<p>Phone: <a href="tel:{{phone}}">{{phone}}</a></p>
+				</a>
+		    </ol>
+		    <hr>
+			</div>
+		  {{/each}}
+		</div>
+		{{!--
 		<div class="instructors" id="instructor1">
 			<a href="" class="thumbnail">
 				<img src="/pictures/louis.png"  class="img">
@@ -38,7 +54,7 @@
 				<p>Charlie Parker</p>
                  <p> information: blah blah</p>
 			</a>
-		</div> 
+		</div> --}}
 
 </body>
 

@@ -1,0 +1,10 @@
+{
+	"user": [
+		{
+			"name": "user",
+            "bio": "Something about the user",
+            "image":"/pictures/profile.png",
+            "email": "larmstrong@ucsd.edu" ,
+            "phone":"+1-209-809-0834"
+        }]
+}

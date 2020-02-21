@@ -3,13 +3,10 @@ body{
     border: 1px dotted gray;
     padding: 20px;
 
+}
 
-}
-.thumbnail{
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-}
+
+
 p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
@@ -22,8 +19,11 @@ h4{
     text-align: center;
 }
 
-.img{
-width: 200px;
-height: 500;
-
+.instructors{
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
 }

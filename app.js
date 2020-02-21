@@ -19,6 +19,7 @@ var calls = require('./routes/calls');
 var add = require('./routes/add');
 var addSong = require('./routes/add');
 var blob = require('./routes/blob');
+var profile = require('./routes/profile');
 //var login = require('./routes/login');
 
 
@@ -56,6 +57,7 @@ app.get('/add', add.view);
 app.get('/addSong', add.addSong);
 app.get('/menu', menu.view);
 app.get('/blob', blob.view);
+app.get('/profile', profile.view);
 //app.get('/login', login.view);
 
 http.createServer(app).listen(app.get('port'), function(){

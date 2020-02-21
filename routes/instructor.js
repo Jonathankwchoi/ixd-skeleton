@@ -1,6 +1,8 @@
-/*
- * GET instructor page.
- */
+// Get songs from JSON file
+
+var instructors = require('../instructors.json');
+
 exports.view = function(req, res){
-    res.render('instructor');
+    console.log(instructors);
+	res.render("instructor", instructors);
 };
