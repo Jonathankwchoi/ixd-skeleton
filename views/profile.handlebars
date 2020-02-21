@@ -15,25 +15,38 @@
 	<link href="css/profile.css" rel="stylesheet">
 	<link href="css/overall.css" rel="stylesheet">
 	<!--<link href="css/hci-friends.css" rel="stylesheet">-->
-	
+	{{> homeButton}}
 </head>
 
 <body>
-	<a href="/menu" id="homeButton">
-    <img src="pictures/home.png" width="100" class="img-responsive" alt="home button">
-    </a>
 
 	<div class="profile">
 		<p1>MY PROFILE</p1>
 	</div>
-
-	<div class="profile" id="myprofile">
-			<a href="" class="thumbnail">
-				<img src="pictures/profile.png" alt="Lorem Pixel image" class="img">
-			</a>
-	</div>
-	<div> <p2>Bio: You are kinda sorta wack kid.</p2></div>
+	
+	<div class="user">
+		  {{#each user}}
+		  <div class="profile">
+		    <ol>	
+					<img src={{image}} class="images">
+					<p class="names"> Name: {{name}}</p>
+					<p class="bios"> Biography: {{bio}}</p>
+					<p>Email: <a href="mailto:{{email}}">{{email}}</a></p>
+					<p>Phone: <a href="tel:{{phone}}">{{phone}}</a></p>
+				</a>
+		    </ol>
+		    <hr>
+			</div>
+		  {{/each}}
+		</div>
+	{{! 
 	<div> <p2>Phone: <a href="tel:+1-408-605-2206">+1 (408) 605-2206</a></p2></div>
 	<div> <p2>Email: <a href="mailto:djasuan@gmail.com"> djasuan@ucsd.edu</p2></div>
+	
+	}}
+
+	<div class="editProfile"><a href="/edit" class="btn btn-info"><h5>Edit Profile</h5></a></div>
+
+	
 </body>
 </html>

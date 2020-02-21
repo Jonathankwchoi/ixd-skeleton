@@ -1,3 +1,5 @@
+//profile from JSON file
+
 var profile = require('../profile.json');
 
 exports.view = function(req, res){

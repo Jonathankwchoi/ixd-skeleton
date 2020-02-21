@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Edit Profile</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/hci-friends.js"></script>
+	-->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/profile.css" rel="stylesheet">
+	<link href="css/overall.css" rel="stylesheet">
+	<!--<link href="css/hci-friends.css" rel="stylesheet">-->
+       {{> homeButton}}
+</head>
+
+<body>
+	<form>
+		<p1>Biography</p1>
+         <br />
+         <textarea rows = "5" cols = "50" name = "description">Enter description here...
+         </textarea>
+	</form>
+
+	 <form>
+         <select name = "dropdown">
+            <option value = "Student" selected>Student</option>
+            <option value = "Instructor">Instructor</option>
+         </select>
+      </form>
+
+	    <form >
+         <p1>Phone number:</p1> <input type = "text" name = "phone" />
+         <p1>Email:</p1><input type = "text" name = "email" />
+      </form>
+
+	  <input type="submit" id="submitBtn" class="btn btn-info" value="Submit"></input>
+
+</body>
+</html>
