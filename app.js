@@ -17,6 +17,7 @@ var search = require('./routes/search');
 var instructor = require('./routes/instructor');
 var calls = require('./routes/calls');
 var add = require('./routes/add');
+var addSong = require('./routes/add');
 var blob = require('./routes/blob');
 //var login = require('./routes/login');
 
@@ -50,7 +51,7 @@ app.get('/chords', chords.view);
 app.get('/search', search.view);
 app.get('/instructor', instructor.view);
 app.get('/calls', calls.view);
-app.get('/add?song=', add.view);
+app.get('/add?name=', add.addSong);
 app.get('/add', add.view);
 app.get('/addSong', add.addSong);
 app.get('/menu', menu.view);

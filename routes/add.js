@@ -14,6 +14,6 @@ exports.addSong = function(req, res) { 
 	  "lyrics": req.query.lyrics
 	}
 	data.songs.push(newSong);
-	response.render('add', data);
+	res.render('add', data);
 	console.log("Song added");
  };
