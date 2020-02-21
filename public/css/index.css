@@ -62,3 +62,7 @@ p {
 * {
     padding: 0px;
 }
+
+pre {
+    background-color: skyblue;
+}
