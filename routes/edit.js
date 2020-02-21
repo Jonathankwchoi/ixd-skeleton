@@ -8,6 +8,7 @@ exports.view = function(req, res){
 exports.editProfile = function(req, res) {
     // Your code goes here
 	var newUser = {
+        "name": req.query.name,
         "bio": req.query.description,
         "email": req.query.email,
         "phone": req.query.phone,

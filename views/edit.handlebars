@@ -19,26 +19,30 @@
 </head>
 
 <body>
-	<form>
-		<p1>Biography</p1>
-         <br />
-         <textarea rows = "5" cols = "50" name = "description">Enter description here...
-         </textarea>
+	<form id="editProfileForm" role="form" method="get" action="/editProfile">
+		
+		<div class="form-group">
+			<p1>Name:</p1> <input type = "text" name = "name" />
+			<p1>Biography</p1>
+			<br />
+			<textarea type="text" class="form-control" id="description" placeholder="Enter description here..." rows = "5" cols = "50" name = "description"></textarea>
+		</div>
+
+		<div class="form-group">
+			<select name = "dropdown">
+				<option value = "Student" selected>Student</option>
+				<option value = "Instructor">Instructor</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<p1>Phone number:</p1> <input type = "text" name = "phone" />
+			<p1>Email:</p1><input type = "text" name = "email" />
+		</div>
+		<input type="submit" id="submitBtn" class="btn btn-info" value="Submit"></input>
+		
 	</form>
 
-	 <form>
-         <select name = "dropdown">
-            <option value = "Student" selected>Student</option>
-            <option value = "Instructor">Instructor</option>
-         </select>
-      </form>
-
-	    <form >
-         <p1>Phone number:</p1> <input type = "text" name = "phone" />
-         <p1>Email:</p1><input type = "text" name = "email" />
-      </form>
-
-	  <input type="submit" id="submitBtn" class="btn btn-info" value="Submit"></input>
 
 </body>
 </html>
