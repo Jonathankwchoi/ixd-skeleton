@@ -1,4 +1,4 @@
-// Get songs from JSON file
+// Get instructor from JSON file
 
 var instructors = require('../instructors.json');
 

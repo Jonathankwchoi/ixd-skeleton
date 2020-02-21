@@ -1,9 +1,20 @@
-h1{
+p1, p2{
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
 }
 
-h2{
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.img{
+    width: 100px;
+}
+
+.thumbnail{
+    width: 150px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: center;
 }
