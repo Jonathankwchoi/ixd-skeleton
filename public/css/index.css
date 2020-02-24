@@ -1,9 +1,9 @@
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
 	color: #8382BF;
 }
 
 body {
-    background-color: skyblue;
+    background-color:white;
 }
 
 .container {
@@ -24,8 +24,8 @@ h2 {
 }
 
 #loginHeader {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
+    font-family:sans-serif;
+    color:mediumseagreen;
 }
 
 p {
@@ -64,5 +64,14 @@ p {
 }
 
 pre {
-    background-color: skyblue;
+    background-color: white;
+}
+
+#submitBtn{
+    background-color: mediumseagreen;
+
+}
+.img{
+    size: 10%;
+    margin-top: 60px;
 }
