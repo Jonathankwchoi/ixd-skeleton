@@ -7,7 +7,7 @@ body {
 
 .container {
     text-align: center;
-    max-height: 80vh;
+    max-height: 90vh;
 }
 
 h2 {
@@ -19,13 +19,17 @@ h2 {
 }
 
 .menu {
-    display: inline-block;
-    width: 250px;
-    margin: 1px;
+    /* display: inline-block; */
+    /* width: 250px; */
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+    margin-right: 1vw;
     /*border-style: solid;
     border: black;
     border-width: 5px;*/
     max-height: 20vh;
+    /* height:20vh; */
 }
 .menu img{
 
@@ -67,5 +71,9 @@ hr {
 } 
 .profile {
     position: absolute;
-    right: 10vw;
+    left: 0vw;
 }
+/* 
+div#menu2.menu {
+    height: 1vh;
+} */

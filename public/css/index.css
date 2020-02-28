@@ -16,8 +16,8 @@ h2 {
 
 .menu {
     display: inline-block;
-    width: 250px;
-    margin: 1px;
+    /* width: 250px; */
+    margin: 1vh;
     border-style: solid;
     border: black;
     border-width: 5px;
@@ -73,5 +73,5 @@ pre {
 }
 .img{
     size: 10%;
-    margin-top: 60px;
+    margin-top: 5vh;
 }
