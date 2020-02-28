@@ -43,14 +43,20 @@
         <br/>
 
         <div>
-            <img src="pictures/Contols_-_Add_On-26-512.png" id="chordsInfoButton">
-        </div>
-        <div>
             <img src="pictures/chordsInfo.png" id="chordsInfoPopup">
         </div>
         <div id="chordsPicture">  
             <img src='pictures/c-chord-open-position.png'>
         </div>
+
+        {{#if viewAlt}}
+        <div>
+            <img src="pictures/Contols_-_Add_On-26-512.png" id="chordsInfoButton">
+        </div>
+        {{else}}
+
+		
+		{{/if}}
         
 
     </div>

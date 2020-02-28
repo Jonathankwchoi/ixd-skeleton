@@ -61,6 +61,7 @@ app.get('/blob', blob.view);
 app.get('/profile', profile.view);
 app.get('/edit', edit.view);
 app.get('/editProfile', edit.editProfile);
+app.get('/page_B', chords.viewAlt)
 //app.get('/login', login.view);
 
 http.createServer(app).listen(app.get('port'), function(){

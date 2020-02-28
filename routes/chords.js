@@ -1,6 +1,15 @@
 /*
  * GET chord page.
  */
-exports.view = function(req, res){
-    res.render('chords');
+
+var projects = require('../songs.json');
+
+exports.view = function(request, response){
+	projects["viewALt"] = false;
+	response.render('chords', projects);
+};
+
+exports.viewAlt = function(request, response){
+	projects["viewAlt"] = true;
+	response.render('chords', projects);
 };
