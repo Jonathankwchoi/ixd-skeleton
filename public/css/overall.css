@@ -22,7 +22,9 @@ body{
 }
 .lyrics, .names{
 
-    color: mediumseagreen;
+    color:darkgreen;
+    max-width: 60vw;
+    margin: auto;
 }
 
 h1,h3,h4{
