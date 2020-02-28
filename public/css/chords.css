@@ -59,7 +59,7 @@ select, option {
     text-indent: 40%;
 }
 
-#chordsInfoButton{
+#chordsInfoButton, #chordsHelpButton{
     height: 5vh;
     text-align: right;
     position: absolute;
