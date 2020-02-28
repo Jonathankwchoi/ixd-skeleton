@@ -11,10 +11,12 @@ var currentTone = 'Major';
  */
 function initializePage() {
     $('#chordsInfoPopup').toggle();
+    $('#creditPopup').toggle();
     $('#key').change(changeChord);
     $('#tone').change(changeChord);
     
     $('#chordsInfoButton').click(toggleInfo);
+    $('#chordsHelpButton').click(toggleInfo);
 
 	// $('#colorBtn').click(randomizeColors);
 }
@@ -25,6 +27,7 @@ function toggleInfo(response) {
     //$('#chordsInfoPopup').html('<img src="pictures/chordsInfo.png">');
     // if ($('#chordsInfoPopup').html() === ""){
     $('#chordsInfoPopup').fadeToggle();
+    $('#creditPopup').fadeToggle();
     // }
     //alert(pictures/chordsInfo.png);
 }
