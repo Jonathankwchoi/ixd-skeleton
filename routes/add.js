@@ -2,6 +2,18 @@
 
 var data = require('../songs.json');
 
+/*$(document).ready(function() {
+	initializePage();
+});
+
+function initializePage() {
+	$(".names").click(toggleLyrics);
+}
+
+function toggleLyrics(response) {
+	data.
+}
+*/
 exports.view = function(req, res) {
     console.log(data);
 	res.render("add", data);
