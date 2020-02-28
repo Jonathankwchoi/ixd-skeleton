@@ -65,3 +65,13 @@ select, option {
     position: absolute;
     right: 10vw;
 }
+
+#chordsInfoPopup{
+    /* height: 35vh; */
+    width: 50vw;
+    text-align: right;
+    position: absolute;
+    top: 10vh;
+    left: 25vw;
+    /* right: 10vw; */
+}

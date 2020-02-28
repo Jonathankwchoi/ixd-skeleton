@@ -10,10 +10,23 @@ var currentTone = 'Major';
  * Function that is called when the document is ready.
  */
 function initializePage() {
+    $('#chordsInfoPopup').toggle();
     $('#key').change(changeChord);
     $('#tone').change(changeChord);
+    
+    $('#chordsInfoButton').click(toggleInfo);
 
 	// $('#colorBtn').click(randomizeColors);
+}
+
+function toggleInfo(response) {
+    console.log("Clicked info button");
+    console.log($('#chordsInfoButton').html());
+    //$('#chordsInfoPopup').html('<img src="pictures/chordsInfo.png">');
+    // if ($('#chordsInfoPopup').html() === ""){
+    $('#chordsInfoPopup').fadeToggle();
+    // }
+    //alert(pictures/chordsInfo.png);
 }
 
 function changeChord(response) {
