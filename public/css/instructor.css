@@ -9,16 +9,17 @@ body{
 
 p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    color:mediumseagreen;
+    font-size: 2vh;
+    margin-left: 50vh;
+    margin-top: 2vh;
+    margin-right: 40vh;
+    text-align: left;
 }
 
 h4{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
     text-align: center;
-    color: mediumseagreen;
 }
 
 .instructors{
