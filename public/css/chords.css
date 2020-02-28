@@ -58,3 +58,10 @@ select, option {
 .form-dropdown {
     text-indent: 40%;
 }
+
+#chordsInfoButton{
+    height: 5vh;
+    text-align: right;
+    position: absolute;
+    right: 10vw;
+}
