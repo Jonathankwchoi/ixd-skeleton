@@ -20,10 +20,9 @@ html {
 body{
     background-color:white;
 }
-.lyrics, .names{
 
+.lyrics, .names{
     color:darkgreen;
-    max-width: 60vw;
     margin: auto;
 }
 
