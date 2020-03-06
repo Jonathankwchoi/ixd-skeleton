@@ -23,6 +23,7 @@ exports.addSong = function(req, res) { 
 	// Your code goes here
 	var newSong = {
 	  "name": req.query.name,
+	  "id": req.query.id,
 	  "lyrics": req.query.lyrics
 	}
 	data.songs.push(newSong);
