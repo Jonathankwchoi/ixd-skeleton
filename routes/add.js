@@ -2,25 +2,12 @@
 
 var data = require('../songs.json');
 
-/*$(document).ready(function() {
-	initializePage();
-});
-
-function initializePage() {
-	$(".names").click(toggleLyrics);
-}
-
-function toggleLyrics(response) {
-	data.
-}
-*/
 exports.view = function(req, res) {
     console.log(data);
 	res.render("add", data);
 };
 
 exports.addSong = function(req, res) {    
-	// Your code goes here
 	var newSong = {
 	  "name": req.query.name,
 	  "id": req.query.id,
