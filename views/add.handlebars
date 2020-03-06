@@ -5,19 +5,29 @@
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <link href="css/overall.css" rel="stylesheet">
+
+	    <script src="js/jquery-1.11.0.js"></script>
 		{{> homeButton}}
 	</head>
 	<body>
-
 	    <h1>Results</h1>
 
 	    <div class="songlist">
 		  {{#each songs}}
-		    <ol>
-			  <h3 class="names" id="{{name}}">{{name}}</h3>
-			  <pre class="lyrics">{{lyrics}}</pre>
+		    <ol action="/toggle">
+			  <button onclick="{{id}}()">{{name}}</button>
+			  <pre id = "{{name}}" class="lyrics" style="display: none;">{{lyrics}}</pre>
+			  <script>
+			  function {{id}}() {
+				var x = document.getElementById("{{name}}");
+				if (x.style.display === "none") {
+				    x.style.display = "block";
+				} else {
+				    x.style.display = "none";
+				}
+			  }
+			  </script>
 		    </ol>
-		    <!--<hr>-->
 		  {{/each}}
 		</div>
 
@@ -26,13 +36,12 @@
 			<h4>Add it here!</h4>
 
 			<div class="form-group">	
-			  <!--<label for="name">Name:</label>-->
+			  <label for="name">Name:</label>
 			  <input type="text" class="form-control" id="name" placeholder="Song name" name="name">
 			</div>
 
 			<div class="form-group">
-			  <!--<label for="lyrics">Lyrics:</label>
-			  <input type="text" class="form-control" id="lyrics" placeholder="Lyrics" name="lyrics">-->
+			  <label for="lyrics">Lyrics:</label>
 			  <textarea type="text" class="form-control" id="lyrics" placeholder="Song lyrics" name="lyrics" rows="4" cols="50"></textarea>
 			</div>
 
