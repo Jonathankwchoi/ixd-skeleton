@@ -60,10 +60,10 @@ select, option {
 }
 
 #chordsInfoButton, #chordsHelpButton{
-    height: 5vh;
+    height: 10vh;
     text-align: right;
     position: absolute;
-    right: 10vw;
+    right: 20vw;
 }
 
 #chordsInfoPopup{
