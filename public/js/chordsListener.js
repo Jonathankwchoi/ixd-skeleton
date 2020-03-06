@@ -16,7 +16,7 @@ function initializePage() {
     $('#tone').change(changeChord);
     
     $('#chordsInfoButton').click(toggleInfo);
-    $('#chordsHelpButton').click(toggleInfo);
+    $('#chordsHelpButton').click(toggleHelp);
 
 	// $('#colorBtn').click(randomizeColors);
 }
@@ -30,6 +30,17 @@ function toggleInfo(response) {
     $('#creditPopup').fadeToggle();
     // }
     //alert(pictures/chordsInfo.png);
+    ga("send", "event", 'info', 'click');
+
+}
+
+function toggleHelp(response) {
+    console.log("Clicked info button");
+    console.log($('#chordsInfoButton').html());
+    $('#chordsInfoPopup').fadeToggle();
+    $('#creditPopup').fadeToggle();
+    ga("send", "event", 'help', 'click');
+
 }
 
 function changeChord(response) {

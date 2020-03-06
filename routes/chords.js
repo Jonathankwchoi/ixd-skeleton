@@ -5,7 +5,7 @@
 var projects = require('../songs.json');
 
 exports.view = function(request, response){
-	projects["viewALt"] = false;
+	projects["viewAlt"] = false;
 	response.render('chords', projects);
 };
 
